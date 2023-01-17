@@ -31,9 +31,10 @@ nav ul li a{
     border-radius: 3px;
     text-transform: uppercase;
     }
-.a.active,a:hover{
+    /*ettől lesz fekete a menü*/
+a.active,a:hover{
     transition: 0,5s;
-    background: #1b9bff;
+    background: black;
     }
 .checkbtn{
     font-size: 30px;
@@ -92,6 +93,7 @@ nav ul li{
 }
 nav ul li a{
     font-size: 20px;
+    color: white;
 }
 a:hover,a.active{
     background: none;
