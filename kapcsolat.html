@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <link rel="stylesheet" href="kapcsolat.css">
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="description" content="Free Web tutorials">
   <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -9,17 +9,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kapcsolat</title>
 </head>
-<body>
+<body class="body">
     <main>
-        <nav>
-             <ul>
-              <li><a class="active" href="index.html">Kezdőlap</a></li>
-              <li><a href="magamról.html">Magamról</a></li>
-              <li><a href="munkáim.html">Munkáim</a></li>
-              <li><a href="kapcsolat.html">Kapcsolat</a></li>
-             </ul>
-        </nav>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn" >
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Menü</label>
+         <ul>
+            <li><a class="active" href="index.html">Kezdőlap</a></li>
+            <li><a href="magamról.html">Magamról</a></li>
+            <li><a href="munkáim.html">Munkáim</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+         </ul>
+    </nav>
         <section>
+          <div class="doboz">
                 <label for="Név">Név:</label><br>
                 <input type="text" id="Név" name="Név" value=""><br>
                 <label for="email">Email:</label><br>
@@ -30,6 +36,7 @@
                     <br>
                   </form>
                 <input type="submit" value="küldés">
+              </div>
         </section>
         <article>
 
