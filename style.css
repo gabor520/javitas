@@ -33,7 +33,7 @@ nav ul li a{
     }
     /*ettől szines  a menü*/
 a.active,a:hover{
-    transition: 0,5s;
+    transition: 1s;
     background: rgb(86, 86, 238);
     }
 .checkbtn{
@@ -46,9 +46,15 @@ a.active,a:hover{
     display: none;
 
 }
+.cim{
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+}
 .doboz{
     margin:auto;
     width: 200px;
+    padding: 20px;
 }
 .body{
     background: white;
@@ -56,13 +62,16 @@ a.active,a:hover{
 .szoveg{
     padding: 20px;
     padding-left: 30px;
+    font-size: 20px;
 }
 .szovegek{
     padding: 20px;
     padding-left: 30px;
+    font-size: 20px;
 }
 .alja{
-    padding-top: 1000px;
+    padding-top: 400px;
+    
 }
 #check{
     display: none;
@@ -79,6 +88,7 @@ label.logo{
     font-weight:bold ;
     line-height: 80px;
 }
+/*kepek gridddel valo elhelyezese*/
 .section  {
     height: calc(100vh - 80px);
     grid-template-columns: 1fr 1fr 1fr;
@@ -101,20 +111,39 @@ label.logo{
 .section .kepek :hover{
     width: 100%;
     height: auto;
-    transition: 0,5sec;
+    transition:1.0s;
 }
+video{
+    height: 400px;
+    width: 400px;
+    padding-left: 20px;
+}
+.rapper{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+/*mobil nezet*/
 @media screen and (max-width:500px)
 {
    nav ul li{
         display: block;
-        margin-bottom: 10px;
-        
-
-        
+        margin-bottom: 10px; 
     }
-
+    nav ul li a{
+        font-size: 10px;
+    }
+    nav .logo{
+        font-size: 15px;
+    }
     .section{
-        max-width: 20%;
+        min-width: 40%;
+        min-height: 40%;
+        grid-template-columns: 1fr;
+        display: grid;
+        grid-gap: 40px;
+        margin-top: 20px;
+        padding: 20px;
     }
     .kepek{
         height: auto;
@@ -127,4 +156,30 @@ label.logo{
         float:left;
         margin-top: 20px;
     }
+    .cim{
+        font-size: 20px;
+        padding: 20px;
+        margin: 20px;
+    }
+    .szoveg{
+        font-size: 10px;
+    }
+    .szovegek
+    {
+        font-size: 10px;
+    }
+    video{
+        max-width: 200px;
+        max-height: 200px;
+        padding-left:  10px;
+    }
+    .kepek{
+        min-width: 50px;
+        min-height: 50px;
+    }
+    .rapper{
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
 }
